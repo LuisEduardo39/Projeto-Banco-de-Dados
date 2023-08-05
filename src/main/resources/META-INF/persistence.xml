@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="LeagueOfLegendsBD" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Partida</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Equipe</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Invocador</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Campeao</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Habilidades</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Item</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.SummonersRift</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Rota</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Torre</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Base</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Nexus</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Tropa</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Selva</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Loja</class>
+		<class>br.edu.unifei.ecot13.projetoFinal.leagueOfLegends.Inibidor</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/lol?useTimezone=true&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.user" value="lol"/>
+            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.password" value="lol"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
+            <property name="javax.persistence.schema-generation.database.action" value="none"/>
+        </properties>
+    </persistence-unit>
+</persistence>
